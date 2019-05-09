@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package com.datastructure;
 
 /**
  * Created by bahubali.n on 28/12/16.

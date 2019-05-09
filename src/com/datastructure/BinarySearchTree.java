@@ -1,24 +1,21 @@
-import sun.tools.java.BinaryMember;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.datastructure;
 
 /**
  * Created by bahubali.n on 27/12/16.
  */
 public class BinarySearchTree {
 
-    TreeNode root;
+    TNode root;
 
     public BinarySearchTree() {
         root = null;
     }
 
 
-    public void addNode(int key, int val) {
-        TreeNode node = new TreeNode(key, val);
+    public void addNode(int val) {
+        TNode node = new TNode(val);
         if (root == null) root = node;
-        else append(root, node);
+        //else append(root, node);
 
     }
 
@@ -39,7 +36,7 @@ public class BinarySearchTree {
         }
     }
 
-    public void traverse(TreeNode root) {
+    public void traverse(TNode root) {
         if (root.getLeftNode() != null)
             traverse(root.getLeftNode());
         System.out.println(root.getValue());
@@ -47,7 +44,8 @@ public class BinarySearchTree {
             traverse(root.getRightNode());
     }
 
-    public TreeNode getRoot() {
+    public TNode getRoot() {
         return this.root;
     }
+    public void setRoot(TNode node) { this.root = node; }
 }

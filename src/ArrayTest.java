@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,14 +6,18 @@ import java.util.List;
 public class ArrayTest {
 
     public static void main(String[] args) throws Exception{
-        int[] input = {6, 9, 3, 2, 8, 7, 13, 5};
-        String input1 = "Hi Bahubali";
-        char[] charArray = input1.toCharArray();
-        System.out.println("Array before shift :");
-        for (int i = 0; i < input.length; i++)
-            System.out.println(input[i]);
-        ArrayTest.mergeSort(input);
-        System.out.println("Array after shift :");
+        int[] input = {1, 2, 3, 4, 5, 6, 7, 8, 9, 13};
+//        String input1 = "Hi Bahubali";
+//        char[] charArray = input1.toCharArray();
+//        System.out.println("Array before shift :");
+//        for (int i = 0; i < input.length; i++)
+//            System.out.println(input[i]);
+//        ArrayTest.mergeSort(input);
+//        System.out.println("Array after shift :");
+//        for (int i = 0; i < input.length; i++)
+//            System.out.println(input[i]);
+
+        ArrayTest.evenOdd(input);
         for (int i = 0; i < input.length; i++)
             System.out.println(input[i]);
     }
@@ -65,7 +68,7 @@ public class ArrayTest {
         int temp;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < (n-i-1); j++) {
-                if (arr[j] > arr[j+1]) {
+                if (arr[i] > arr[j+1]) {
                     temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
@@ -153,6 +156,22 @@ public class ArrayTest {
             arr[i] = temp;
             if (sIndex < size -1) sIndex++;
             else sIndex = shift;
+
+            //if (i >= sIndex) break;
+            System.out.println("Num Of Iter : "+i);
+        }
+    }
+
+    public static void evenOdd(int[] inputArray) {
+        int nextEven = 0, nextOdd = inputArray.length - 1;
+        while (nextEven < nextOdd) {
+            if (inputArray[nextEven] % 2 == 0) {
+                nextEven++;
+            } else {
+                int tmp = inputArray[nextEven];
+                inputArray[nextEven] = inputArray[nextOdd];
+                inputArray[nextOdd--] = tmp;
+            }
         }
     }
 }

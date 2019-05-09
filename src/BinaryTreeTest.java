@@ -1,5 +1,4 @@
-import java.util.List;
-import java.util.ListIterator;
+import com.datastructure.BinarySearchTree;
 
 /**
  * Created by bahubali.n on 27/12/16.
@@ -12,7 +11,7 @@ public class BinaryTreeTest {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         for (int i = 0; i < sizeOfArray; i++) {
             diff = (inputArray[i] > d)? (inputArray[i]-d): (d - inputArray[i]);
-            binarySearchTree.addNode(diff, inputArray[i]);
+            //binarySearchTree.addNode(diff, inputArray[i]);
         }
 
         binarySearchTree.traverse(binarySearchTree.getRoot());
