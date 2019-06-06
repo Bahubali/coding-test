@@ -3,11 +3,7 @@ package com.problems;
 import com.datastructure.BinaryTree;
 import com.datastructure.TNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by bahubali.n on 06/03/19.
@@ -32,10 +28,14 @@ public class BinaryTreeProblem {
         //int heightOfTree = binaryTree.height();
         //for (int i = heightOfTree; i >= 1; i--)
           //  reverseLevelOrderTraversal(binaryTree.getRoot(), i);
+
+        int[] inputArray = new int[]{1, 2, 3, -1, 4, 5, 6, -1, -1, -1, -1, 7, -1, -1, 8};
+        TNode root = convertArrayToBT(inputArray);
+        levelOrderTraversal(root);
     }
 
     public static void levelOrderTraversal(TNode root) {
-        //Queue<TNode> queue = new LinkedList<>();
+        //QueueTemp<TNode> queue = new LinkedList<>();
         Stack<TNode> stack1 = new Stack<>();
         Stack<TNode> stack2 = new Stack<>();
         stack1.add(root);
@@ -110,5 +110,35 @@ public class BinaryTreeProblem {
             currentDepthNodes = nextDepthNodes;
         }
         levelAverages.stream().forEach(System.out::println);
+    }
+
+    public static TNode convertArrayToBT(int[] listNodes) {
+
+        int sizeOfArray = listNodes.length;
+        int index = 0;
+        TNode root = new TNode(listNodes[index]);
+        Deque<TNode> queue = new LinkedList<>();
+        queue.add(root);
+        index++;
+        while (!queue.isEmpty() && index < sizeOfArray - 1) {
+            TNode node = queue.pop();
+            if (node != null) {
+                TNode left = new TNode(listNodes[index++]);
+                TNode right = new TNode(listNodes[index++]);
+                if (left.getValue() > 0) {
+                    node.setLeftNode(left);
+                    queue.add(left);
+                } else {
+                    queue.add(null);
+                }
+                if (right.getValue() > 0) {
+                    node.setRightNode(right);
+                    queue.add(right);
+                } else {
+                    queue.add(null);
+                }
+            }
+        }
+        return root;
     }
 }

@@ -76,7 +76,7 @@ class BinarySearchTree {
         leafNodes.stream().forEach(System.out::println);
 
         // BinaryTreeNode root = binaryTree.getRoot();
-        // Queue<BinaryTreeNode> queue = new LinkedList<>();
+        // QueueTemp<BinaryTreeNode> queue = new LinkedList<>();
         // queue.add(root);
         // while(!queue.isEmpty()) {
         //     BinaryTreeNode node = queue.poll();

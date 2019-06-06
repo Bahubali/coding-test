@@ -1,7 +1,7 @@
 package com.datastructure;
 
-import java.util.*;
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by bahubali.n on 06/03/19.
@@ -29,7 +29,7 @@ public class BinaryTree {
 
     boolean add(TNode head, TNode newNode) {
         boolean nodeAdded = false;
-        Queue<TNode> queue = new LinkedList<>();
+        Queue<TNode> queue = new LinkedList<TNode>();
         queue.add(head);
         while (!queue.isEmpty() && !nodeAdded) {
             TNode node = queue.poll();

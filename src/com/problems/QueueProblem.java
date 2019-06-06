@@ -1,6 +1,6 @@
 package com.problems;
 
-import com.datastructure.Queue;
+import com.datastructure.QueueTemp;
 
 /**
  * Created by bahubali.n on 05/05/19.
@@ -8,7 +8,7 @@ import com.datastructure.Queue;
 public class QueueProblem {
 
     public static void main(String[] args) throws Exception{
-        Queue queue = new Queue(10);
+        QueueTemp queue = new QueueTemp(10);
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);

@@ -3,12 +3,12 @@ package com.datastructure;
 /**
  * Created by bahubali.n on 05/05/19.
  */
-public class Queue {
+public class QueueTemp {
 
     private int head = 0, tail = 0, numQueueElements = 0;
     private Integer[] entries;
 
-    public Queue(int capacity) {
+    public QueueTemp(int capacity) {
         entries = new Integer[capacity];
     }
 

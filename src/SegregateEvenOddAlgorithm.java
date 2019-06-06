@@ -12,7 +12,7 @@ public class SegregateEvenOddAlgorithm {
         int start = 0, end = sizeOfArray - 1; //Initialize start and end pointers
 
         while (start < end) {
-            if (inputArray[start] % 2 == 0) start++; //Move to next, until odd number occur
+            if (inputArray[start] % 2 == 0) start++; //Position to next, until odd number occur
             else {
                 if (inputArray[end] % 2 != 0) end--;
                 else {
