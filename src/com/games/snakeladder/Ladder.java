@@ -4,15 +4,15 @@ package com.games.snakeladder;
  * Created by bahubali.n on 27/05/19.
  */
 public class Ladder {
-    private final Position top;
-    private final Position bottom;
+    private final Panel top;
+    private final Panel bottom;
 
-    public Ladder(Position top, Position bottom) {
+    public Ladder(Panel top, Panel bottom) {
         this.top = top;
         this.bottom = bottom;
     }
 
-    public Position getTop() { return top; }
+    public Panel getTop() { return this.top; }
 
-    public Position getBottom() { return bottom; }
+    public Panel getBottom() { return this.bottom; }
 }

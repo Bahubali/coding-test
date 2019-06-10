@@ -5,19 +5,19 @@ package com.games.snakeladder;
  */
 public class Player {
     private String name;
-    private Position currentPosition;
+    private Panel currentPanel;
 
-    public Player(String name) {
+    public Player(String name, Panel panel) {
         this.name = name;
-        this.currentPosition = new Position(9, 0);
+        this.currentPanel = panel;
     }
 
-    public void setCurrentPosition(Position position) {
-        this.currentPosition = position;
+    public void setCurrentPanel(Panel panel) {
+        this.currentPanel = panel;
     }
 
-    public Position getCurrentPosition() {
-        return this.currentPosition;
+    public Panel getCurrentPanel() {
+        return this.currentPanel;
     }
 
     public String getName() {

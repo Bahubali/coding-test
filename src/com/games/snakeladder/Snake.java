@@ -4,19 +4,20 @@ package com.games.snakeladder;
  * Created by bahubali.n on 27/05/19.
  */
 public class Snake {
-    private final Position head;
-    private final Position tail;
+    private final Panel headIn;
+    private final Panel tailIn;
 
-    public Snake(Position head, Position tail) {
-        this.head = head;
-        this.tail = tail;
+    public Snake(Panel head, Panel tail) throws Exception {
+        this.headIn = head;
+        head.addSnake(this);
+        this.tailIn = tail;
     }
 
-    public Position getHead() {
-        return head;
+    public Panel getHeadIn() {
+        return this.headIn;
     }
 
-    public Position getTail() {
-        return tail;
+    public Panel getTailIn() {
+        return this.tailIn;
     }
 }
