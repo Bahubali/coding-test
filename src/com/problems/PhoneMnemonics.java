@@ -12,7 +12,7 @@ public class PhoneMnemonics {
 
     public static void main(String[] args) {
 
-        String phoneNumber = "227669610";
+        String phoneNumber = "234";
         char[] partialMnemonics = new char[phoneNumber.length()];
         List<String> mnemonics = new ArrayList<>();
         phoneMnemonicsHelper(phoneNumber, 0, partialMnemonics, mnemonics);
