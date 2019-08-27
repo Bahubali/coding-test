@@ -11,7 +11,7 @@ public class DeleteDuplicatesInArray {
     public static void main(String[] args) {
 
         List<Integer> inputArray = Arrays.asList(2,3,5,5,5,7,7,11,11,11,11, 11,13);
-        duplicateMin(inputArray);
+        bruteForceSolution(inputArray);
         inputArray.stream().forEach(System.out::println);
     }
 

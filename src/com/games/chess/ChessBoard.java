@@ -1,7 +1,9 @@
 package com.games.chess;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by bahubali.n on 16/06/19.
@@ -9,11 +11,12 @@ import java.util.List;
 public class ChessBoard extends Board {
 
     private List<Player> players = new ArrayList<>();
-
+    private Map<String, Panel> panels = new HashMap<>();
     private final Panel[][] grid = new Panel[this.rows][this.columns];
     public ChessBoard(int rows, int columns) {
         super(rows, columns);
     }
+
     @Override
     public void initializeBoard() {
         for (int i = 0; i < this.rows; i++) {
@@ -24,6 +27,7 @@ public class ChessBoard extends Board {
                 else
                     grid[i][j] = new WhitePanel(new Position(i, j));
                 previousPanel = grid[i][j];
+                panels.put(previousPanel.getPosition().getKey(), previousPanel);
             }
         }
     }
@@ -37,9 +41,27 @@ public class ChessBoard extends Board {
     }
 
     public void makeMove(final Move move) {
-        Player player = move.getPlayer();
-
+        if (move.isValid()) {
+            Player player = move.getPlayer();
+            Panel panel = panels.get(move.getFromPosition().getKey());
+            Piece piece = panel.getPiece();
+            if (player.getColor().equalsIgnoreCase(piece.getColor())) {
+                if (piece.isValidMove(panel)) {
+                    piece.setPosition(move.getToPosition());
+                    panel.setPiece(null);
+                    Panel newPanel = grid[move.getToPosition().getRow()][move.getToPosition().getColumn()];
+                    newPanel.setPiece(piece);
+                } else {
+                    System.out.println("Invalid move");
+                }
+            } else {
+                System.out.println("Invalid move");
+            }
+        } else {
+            System.out.println("Invalid move");
+        }
     }
+
     public void printBoard() {
         for (int i = 0; i < this.rows; i++) {
             for (int j = 0; j < this.columns; j++) {

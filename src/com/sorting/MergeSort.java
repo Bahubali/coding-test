@@ -1,0 +1,13 @@
+package com.sorting;
+
+public class MergeSort {
+
+    public static void main(String[] args) {
+        int[] nums = {5, 2, 3, 7, 8, 1, 4, 6};
+
+    }
+
+    public static void mergeSort(int[] nums, int l, int h) {
+
+    }
+}

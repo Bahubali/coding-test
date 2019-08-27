@@ -1,6 +1,7 @@
 package com.problems;
 
 import java.util.List;
+import java.util.ArrayList;
 /**
  * Created by bahubali.n on 19/01/19.
  */
@@ -10,10 +11,10 @@ public class BackTracking {
         //code
         //List<Integer> diceChoices = new ArrayList<>();
         //diceRoll(3, diceChoices);
-        //String str = "AABC";
-        //permute(str);
+        String str = "AABC";
+        permute(str);
         //diceSum(4, 8, 0, diceChoices);
-        printBinaryHelper(3, "");
+        //printBinaryHelper(3, "");
     }
 
     public static void indent(int n) {
@@ -87,8 +88,8 @@ public class BackTracking {
                 String newCharChosen = charChosen + inputStr.charAt(i);
                 String remaining = inputStr.substring(0, i) + inputStr.substring(i+1);
                 permuteHelper(remaining, newCharChosen);
-                //inputStr = charChosen.substring(charChosen.length() - 1 - i, charChosen.length())+inputStr;
-                //charChosen = charChosen.substring(i, charChosen.length() - 1 - i);
+                inputStr = charChosen.substring(charChosen.length() - 1 - i, charChosen.length())+inputStr;
+                charChosen = charChosen.substring(i, charChosen.length() - 1 - i);
             }
         }
     }

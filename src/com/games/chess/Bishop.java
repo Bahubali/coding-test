@@ -10,7 +10,7 @@ public class Bishop extends Piece {
         this.setName("B");
     }
     @Override
-    public boolean isValidMove(Position position) {
+    public boolean isValidMove(Panel panel) {
         return false;
     }
 }

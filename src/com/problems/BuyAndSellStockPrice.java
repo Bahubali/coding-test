@@ -15,7 +15,7 @@ public class BuyAndSellStockPrice {
 //        stockProfit.put("max_profit", maxProfit);
 //        stockProfit.put("max_price", 0.0);
 //        System.out.println("Min Price: "+computeRecursiveMaxProfit(prices, 0, prices.size()-1, stockProfit));
-        System.out.println("Max Profit: "+buyAndSellStockTwice(prices));
+        System.out.println("Max Profit: "+computeMaxProfit(prices));
 
     }
 

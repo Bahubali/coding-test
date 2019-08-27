@@ -9,7 +9,7 @@ import java.util.List;
 public class Player {
 
     private String color = null;
-    private List<Root> roots;
+    private List<Rook> rooks;
     private List<Knight> knights;
     private List<Bishop> bishops;
     private List<Pawn> pawns;
@@ -21,7 +21,7 @@ public class Player {
         this.color = color;
         this.knights = new ArrayList<>();
         this.bishops = new ArrayList<>();
-        this.roots = new ArrayList<>();
+        this.rooks = new ArrayList<>();
         this.pawns = new ArrayList<>();
         this.queen = null;
         this.king = null;
@@ -30,15 +30,15 @@ public class Player {
 
     private void onboardPieces(Position from, Position to) {
         //Add pawns
-        int pawnRow = (this.color == "W")? to.getRow() : from.getRow();
+        int frontRow = (this.color == "W")? to.getRow() : from.getRow();
         int backRow = (this.color == "W")? from.getRow() : to.getRow();
         addBishops(backRow);
         addKnights(backRow);
-        addRoots(backRow);
+        addRooks(backRow);
         addKing(backRow);
         addQueen(backRow);
         for (int column = from.getColumn(); column <= to.getColumn(); column++) {
-            Position position = new Position(pawnRow, column);
+            Position position = new Position(frontRow, column);
             Piece piece = new Pawn(color);
             piece.setPosition(position);
             addPiece(piece);
@@ -53,9 +53,9 @@ public class Player {
             if (this.pawns.size() < 8) {
                 this.pawns.add((Pawn) piece);
             }
-        } else if (piece instanceof Root) {
-            if (this.roots.size() < 2) {
-                this.roots.add((Root) piece);
+        } else if (piece instanceof Rook) {
+            if (this.rooks.size() < 2) {
+                this.rooks.add((Rook) piece);
             }
         } else if (piece instanceof Knight) {
             if (this.knights.size() < 2) {
@@ -78,10 +78,10 @@ public class Player {
         addPiece(piece1);
     }
 
-    private void addRoots(int row) {
-        Piece piece = new Root(color);
+    private void addRooks(int row) {
+        Piece piece = new Rook(color);
         piece.setPosition(new Position(row, 0));
-        Piece piece1 = new Root(color);
+        Piece piece1 = new Rook(color);
         piece1.setPosition(new Position(row, 7));
         addPiece(piece);
         addPiece(piece1);
@@ -113,4 +113,6 @@ public class Player {
     public List<Piece> getPieces() {
         return this.pieces;
     }
+
+    public String getColor() { return this.color; }
 }

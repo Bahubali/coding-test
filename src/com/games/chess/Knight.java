@@ -10,7 +10,7 @@ public class Knight extends Piece {
         this.setName("H");
     }
     @Override
-    public boolean isValidMove(Position position) {
+    public boolean isValidMove(Panel panel) {
         return false;
     }
 }

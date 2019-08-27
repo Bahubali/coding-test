@@ -5,13 +5,14 @@ package com.games.chess;
  */
 public class Queen extends Piece {
 
+
     public Queen(String color) {
         this.setColor(color);
         this.setName("Q");
     }
 
     @Override
-    public boolean isValidMove(Position position) {
+    public boolean isValidMove(Panel panel) {
         return false;
     }
 }

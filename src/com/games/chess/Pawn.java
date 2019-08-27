@@ -9,8 +9,11 @@ public class Pawn extends Piece {
         this.setColor(color);
         this.setName("P");
     }
+
     @Override
-    public boolean isValidMove(Position position) {
+    public boolean isValidMove(Panel panel) {
+        Position currentPosition = getPosition();
+
         return false;
     }
 }

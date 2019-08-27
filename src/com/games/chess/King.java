@@ -10,7 +10,22 @@ public class King extends Piece {
         this.setName("K");
     }
     @Override
-    public boolean isValidMove(Position position) {
-        return false;
+    public boolean isValidMove(Panel panel) {
+        boolean isValidMove = true;
+        Position position = getPosition();
+        if (position.getRow() == panel.getPosition().getRow()) {
+            int steps = Math.abs(position.getColumn() - panel.getPosition().getColumn());
+            isValidMove = (steps > 1)? false : true;
+
+        } else if (position.getColumn() == panel.getPosition().getColumn()) {
+            int steps = Math.abs(position.getColumn() - panel.getPosition().getColumn());
+            isValidMove = (steps > 1)? false : true;
+        }
+        if (isValidMove) {
+            if (panel.getPiece().getColor().equals(this.getColor())) {
+                isValidMove = false;
+            }
+        }
+        return isValidMove;
     }
 }

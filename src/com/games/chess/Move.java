@@ -7,18 +7,30 @@ public class Move {
 
     private Player player;
 
-    private Position position;
+    private Position fromPosition;
 
-    Move(final Player player, final Position position) {
+    private Position toPosition;
+
+    Move(final Player player, final Position from, Position to) {
         this.player = player;
-        this.position = position;
+        this.fromPosition = from;
+        this.toPosition = to;
     }
 
     public Player getPlayer() {
         return this.player;
     }
 
-    public Position getPosition() {
-        return this.position;
+    public Position getFromPosition() {
+        return this.fromPosition;
+    }
+
+    public Position getToPosition() { return this.toPosition; }
+
+    public boolean isValid() {
+        if (fromPosition.getRow() == toPosition.getRow()) {
+            if (fromPosition.getColumn() == toPosition.getColumn()) return false;
+        }
+        return true;
     }
 }

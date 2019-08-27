@@ -22,4 +22,6 @@ public class Position {
     public String toString() {
         return row + ","+column;
     }
+
+    public String getKey() { return row + "" + column; }
 }

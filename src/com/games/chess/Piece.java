@@ -15,11 +15,12 @@ public abstract class Piece {
     protected void setColor(String color) { this.color = color; }
     protected void setName(String name) { this.name = name; }
 
-    public String getName() {
+    protected String getName() {
         return color.concat(name);
     }
-    public Position getPosition() {
-        return position;
+    protected String getColor() { return this.color; }
+    protected Position getPosition() {
+        return this.position;
     }
-    public abstract boolean isValidMove(Position position);
+    public abstract boolean isValidMove(Panel panel);
 }
