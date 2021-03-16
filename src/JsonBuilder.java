@@ -15,7 +15,7 @@ public class JsonBuilder {
             while (entries.hasNext()) {
                 Map.Entry thisEntry = (Map.Entry) entries.next();
                 System.out.println();
-                System.out.printf("%"+numberOfSpaces+"s %s", " ", thisEntry.getKey()+":");
+                System.out.printf("%"+numberOfSpaces+"s %s", " ","\""+thisEntry.getKey()+"\":");
                 TrieNode node = (TrieNode) thisEntry.getValue();
                 if (!node.endOfWord) {
                     System.out.println();
@@ -34,7 +34,7 @@ public class JsonBuilder {
 
     public static void main(String[] args) {
         Trie trie = new Trie();
-        String[] inputs = new String[]{"A:B:C=10", "A:B:D=15", "A:B:D=20", "F=100", "A:B=10"};
+        String[] inputs = new String[]{"A:B:C=10", "A:B:D=15", "A:B:D=20", "F=100", "A:B=15"};
         for (int i = 0; i < inputs.length; i++) {
             String[] keyValuePair = inputs[i].split("=");
             trie.insert(keyValuePair[0].replace(":", ""), keyValuePair[1]);

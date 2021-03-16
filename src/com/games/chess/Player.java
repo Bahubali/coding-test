@@ -25,10 +25,10 @@ public class Player {
         this.pawns = new ArrayList<>();
         this.queen = null;
         this.king = null;
-        onboardPieces(from, to);
+        arrangePieces(from, to);
     }
 
-    private void onboardPieces(Position from, Position to) {
+    private void arrangePieces(Position from, Position to) {
         //Add pawns
         int frontRow = (this.color == "W")? to.getRow() : from.getRow();
         int backRow = (this.color == "W")? from.getRow() : to.getRow();

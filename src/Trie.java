@@ -1,6 +1,3 @@
-import java.util.Iterator;
-import java.util.Map;
-
 /**
  * Created by bahubali.n on 28/02/17.
  */
@@ -20,12 +17,12 @@ public class Trie {
                 node = new TrieNode();
                 current.children.put(ch, node);
             }
-            if ((i+1) == word.length()) {
-                node.values.add(val);
-            }
             current = node;
         }
-        current.endOfWord = true;
+        if (current.children.isEmpty()) {
+            current.values.add(val);
+            current.endOfWord = true;
+        }
     }
 
     public TrieNode getRoot() {

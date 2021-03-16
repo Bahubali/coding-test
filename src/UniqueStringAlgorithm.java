@@ -9,7 +9,7 @@ public class UniqueStringAlgorithm {
         String inputString = "BAHUBALI".toLowerCase();
         int hashCode = inputString.hashCode();
         System.out.println(((hashCode) ^ (hashCode >>> 16)));
-        Map<String, String> phoneBook = new HashMap<>();
+        Map<String, String> phoneBook = new HashMap<String, String>();
 
 //        int sum = 0;
 //        for (int i = 0; i < inputString.length(); i++) {

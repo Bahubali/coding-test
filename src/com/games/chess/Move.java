@@ -11,7 +11,7 @@ public class Move {
 
     private Position toPosition;
 
-    Move(final Player player, final Position from, Position to) {
+    Move(final Player player, final Position from, final Position to) {
         this.player = player;
         this.fromPosition = from;
         this.toPosition = to;

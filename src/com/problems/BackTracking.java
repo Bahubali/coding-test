@@ -1,7 +1,6 @@
 package com.problems;
 
 import java.util.List;
-import java.util.ArrayList;
 /**
  * Created by bahubali.n on 19/01/19.
  */

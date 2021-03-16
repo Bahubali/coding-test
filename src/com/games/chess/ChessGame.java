@@ -13,7 +13,10 @@ public class ChessGame {
         chessBoard.addPlayer(black);
         chessBoard.printBoard();
 
-        chessBoard.makeMove(new Move(white, new Position(0, 3), new Position(2, 3)));
+        chessBoard.makeMove(new Move(white, new Position(1, 3), new Position(2, 3)));
+        chessBoard.makeMove(new Move(white, new Position(2, 3), new Position(3, 3)));
+        System.out.println("After first move");
+        chessBoard.printBoard();
 
     }
 }

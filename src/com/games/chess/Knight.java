@@ -6,8 +6,7 @@ package com.games.chess;
 public class Knight extends Piece {
 
     public Knight(String color) {
-        this.setColor(color);
-        this.setName("H");
+        super(color, "H");
     }
     @Override
     public boolean isValidMove(Panel panel) {

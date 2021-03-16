@@ -7,8 +7,7 @@ public class Queen extends Piece {
 
 
     public Queen(String color) {
-        this.setColor(color);
-        this.setName("Q");
+        super(color, "Q");
     }
 
     @Override

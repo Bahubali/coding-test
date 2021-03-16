@@ -6,14 +6,21 @@ package com.games.chess;
  */
 public abstract class Board {
 
-    public int rows;
+    protected int rows;
 
-    public int columns;
+    protected int columns;
 
     Board(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
     }
 
+    public int getRows() {
+        return this.rows;
+    }
+
+    public int getColumns() {
+        return this.columns;
+    }
     protected abstract void initializeBoard();
 }

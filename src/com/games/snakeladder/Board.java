@@ -57,9 +57,11 @@ public class Board {
                 if (newPanel.hasSnake()) {
                     Panel snakeTail = newPanel.getSnake().getTailIn();
                     player.setCurrentPanel(snakeTail);
+                    System.out.println("Snake bit, player "+player.getName());
                 } else if (newPanel.hasLadder()) {
                     Panel ladderTop = newPanel.getLadder().getTop();
                     player.setCurrentPanel(ladderTop);
+                    System.out.println("Ladder up, player "+player.getName());
                 } else {
                     player.setCurrentPanel(newPanel);
                 }

@@ -6,8 +6,7 @@ package com.games.chess;
 public class Rook extends Piece {
 
     public Rook(String color) {
-        this.setColor(color);
-        this.setName("R");
+        super(color, "R");
     }
     @Override
     public boolean isValidMove(final Panel panel) {

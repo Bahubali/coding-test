@@ -6,14 +6,26 @@ package com.games.chess;
 public class Pawn extends Piece {
 
     public Pawn(String color) {
-        this.setColor(color);
-        this.setName("P");
+        super(color, "P");
     }
 
     @Override
     public boolean isValidMove(Panel panel) {
-        Position currentPosition = getPosition();
+        boolean isValidMove = true;
+        Position position = getPosition();
+        if (position.getRow() == panel.getPosition().getRow()) {
+            int steps = Math.abs(position.getColumn() - panel.getPosition().getColumn());
+            isValidMove = (steps == 2 && panel.getPiece().totalNoOfMoves() < 1)? false : true;
 
-        return false;
+        } else if (position.getColumn() == panel.getPosition().getColumn()) {
+            int steps = Math.abs(position.getRow() - panel.getPosition().getRow());
+            isValidMove = (steps == 2 && panel.getPiece().totalNoOfMoves() < 1)? false : true;
+        }
+        if (isValidMove) {
+            if (panel.getPiece() != null && panel.getPiece().getColor().equals(this.getColor())) {
+                isValidMove = false;
+            }
+        }
+        return isValidMove;
     }
 }

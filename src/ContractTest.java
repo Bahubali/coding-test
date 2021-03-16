@@ -1,5 +1,3 @@
-import sun.misc.resources.Messages_pt_BR;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +17,7 @@ public class ContractTest {
         EmployeeKey ek1 = new EmployeeKey("101", "10101988");
         EmployeeKey ek2 = new EmployeeKey("102", "12101988");
         EmployeeKey ek3 = new EmployeeKey("103", "13101988");
-        Map<EmployeeKey, String> cache = new HashMap<>();
+        Map<EmployeeKey, String> cache = new HashMap<EmployeeKey, String>();
         cache.put(ek1, "Bahubali");
         cache.put(ek2, "Anand");
         cache.put(ek3, "Sachin");

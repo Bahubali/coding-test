@@ -1,9 +1,9 @@
 package com.problems;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Arrays;
 
 /**
  * Created by bahubali.n on 05/01/19.

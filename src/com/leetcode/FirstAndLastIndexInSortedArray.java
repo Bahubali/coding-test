@@ -1,15 +1,15 @@
 package com.leetcode;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 public class FirstAndLastIndexInSortedArray {
 
     public static void main(String[] args) {
         int[] inputArray = {1, 2, 3};
         int[] result = findStartAndEndIndexOfElement(inputArray, 1);
-        Arrays.stream(result).forEach(System.out::print);
+        //Arrays.stream(result).forEach(System.out::println);
     }
 
     public static int[] findStartAndEndIndexOfElement(int[] nums, int target) {
@@ -24,8 +24,9 @@ public class FirstAndLastIndexInSortedArray {
                     pivotIndex++;
                 }
             }
-            return indexes.stream().mapToInt(Integer::intValue).toArray();
+            //return indexes.stream().mapToInt(Integer::intValue).toArray();
         }
+        return new int[]{1};
     }
 
     public static int findPivot(int[] nums, int l, int r, int searchKey) {

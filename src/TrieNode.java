@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by bahubali.n on 28/02/17.
@@ -10,8 +13,8 @@ public class TrieNode
     boolean endOfWord;
 
     public TrieNode() {
-        children = new HashMap<>();
+        children = new HashMap<Character, TrieNode>();
         endOfWord = false;
-        values = new ArrayList<>();
+        values = new ArrayList<String>();
     }
 }

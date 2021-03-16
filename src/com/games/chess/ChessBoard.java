@@ -12,16 +12,16 @@ public class ChessBoard extends Board {
 
     private List<Player> players = new ArrayList<>();
     private Map<String, Panel> panels = new HashMap<>();
-    private final Panel[][] grid = new Panel[this.rows][this.columns];
+    private final Panel[][] grid = new Panel[this.getRows()][this.getColumns()];
     public ChessBoard(int rows, int columns) {
         super(rows, columns);
     }
 
     @Override
     public void initializeBoard() {
-        for (int i = 0; i < this.rows; i++) {
+        for (int i = 0; i < this.getRows(); i++) {
             Panel previousPanel = (i > 0)? grid[i-1][0] : grid[i][0];
-            for (int j = 0; j < this.columns; j++) {
+            for (int j = 0; j < this.getColumns(); j++) {
                 if (previousPanel instanceof WhitePanel)
                     grid[i][j] = new BlackPanel(new Position(i, j));
                 else
@@ -43,14 +43,16 @@ public class ChessBoard extends Board {
     public void makeMove(final Move move) {
         if (move.isValid()) {
             Player player = move.getPlayer();
-            Panel panel = panels.get(move.getFromPosition().getKey());
-            Piece piece = panel.getPiece();
-            if (player.getColor().equalsIgnoreCase(piece.getColor())) {
-                if (piece.isValidMove(panel)) {
-                    piece.setPosition(move.getToPosition());
-                    panel.setPiece(null);
-                    Panel newPanel = grid[move.getToPosition().getRow()][move.getToPosition().getColumn()];
-                    newPanel.setPiece(piece);
+            Panel fromPanel = panels.get(move.getFromPosition().getKey());
+            Panel toPanel = panels.get(move.getToPosition().getKey());
+            Piece fromPiece = fromPanel.getPiece();
+            if (player.getColor().equalsIgnoreCase(fromPiece.getColor())) {
+                if (fromPiece.isValidMove(toPanel)) {
+                    fromPiece.setPosition(move.getToPosition());
+                    fromPanel.setPiece(null);
+                    //Panel newPanel = grid[move.getToPosition().getRow()][move.getToPosition().getColumn()];
+                    fromPiece.setMove(move);
+                    toPanel.setPiece(fromPiece);
                 } else {
                     System.out.println("Invalid move");
                 }
@@ -63,8 +65,8 @@ public class ChessBoard extends Board {
     }
 
     public void printBoard() {
-        for (int i = 0; i < this.rows; i++) {
-            for (int j = 0; j < this.columns; j++) {
+        for (int i = 0; i < this.getRows(); i++) {
+            for (int j = 0; j < this.getColumns(); j++) {
                 Panel panel = grid[i][j];
                 if (panel.getPiece() != null)
                     System.out.print(panel.getPiece().getName()+"  ");

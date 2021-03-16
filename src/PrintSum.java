@@ -1,5 +1,3 @@
-import com.sun.tools.classfile.Code_attribute;
-
 /**
  * Created by bahubali.n on 25/12/16.
  */
@@ -8,9 +6,9 @@ public class PrintSum {
     public static void main(String[] args) throws Exception{
         int[] arr1 = {1, 2, 3, 2, 3, 1, 3};
         int[] arr2 = {5, 8, 12, 14};
-        int[] arr = {1, 2, 1, 45, 35, 2, 1};
+        int[] arr = {2, 3, 4, 1, 8, 9, 3};
         int n = 16;
-        System.out.println(PrintSum.getOddOccurance(arr1));
+        System.out.println(PrintSum.FindMaxSum(arr, arr.length));
 //        System.out.println("Array before sorting :");
 //        PrintSum.mergeTwoArrays(arr1, arr2);
 //        System.out.println("Array after sorting :");
@@ -84,5 +82,35 @@ public class PrintSum {
 
         /* return max of incl and excl */
         return ((incl > excl) ? incl : excl);
+    }
+
+    public static int maxSum(int arr[], int n) {
+        int maxSumSoFar = 0;
+        int maxSum = Integer.MIN_VALUE, minVal = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < minVal) {
+                minVal = arr[i];
+                maxSum = Math.max(maxSum, maxSumSoFar);
+            } else {
+
+            }
+        }
+        return maxSum;
+    }
+
+    public static int maxProfit(int[] prices) {
+
+        int maxProfit = Integer.MIN_VALUE, minPrice = Integer.MAX_VALUE;
+
+        for(int i = 0; i < prices.length; i++) {
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            } else if (minPrice < prices[i]) {
+                int profit = prices[i] - minPrice;
+                maxProfit = Math.max(profit, maxProfit);
+            }
+        }
+        return (maxProfit < 0)? 0 : maxProfit;
     }
 }

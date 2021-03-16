@@ -31,12 +31,12 @@ public class MultiplyStrings {
         }
         StringBuilder finalResult = new StringBuilder();
         final boolean[] skipZero = {false};
-        Arrays.stream(result).forEach(num -> {
-            if (skipZero[0])
-                finalResult.append(Integer.toString(num));
-            skipZero[0] = (num > 0 && skipZero[0] == false)? true : false;
-        }
-        );
+//        Arrays.stream(result).forEach(num -> {
+//            if (skipZero[0])
+//                finalResult.append(Integer.toString(num));
+//            skipZero[0] = (num > 0 && skipZero[0] == false)? true : false;
+//        }
+//        );
         return finalResult.toString();
     }
 }

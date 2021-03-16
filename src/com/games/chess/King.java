@@ -6,8 +6,7 @@ package com.games.chess;
 public class King extends Piece {
 
     public King(String color) {
-        this.setColor(color);
-        this.setName("K");
+        super(color, "K");
     }
     @Override
     public boolean isValidMove(Panel panel) {

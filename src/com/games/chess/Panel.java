@@ -5,9 +5,9 @@ package com.games.chess;
  */
 public abstract class Panel {
 
-    private Position position;
+    protected Position position;
     protected Piece piece;
-    public final String color;
+    protected final String color;
 
     public Panel(Position position, String color) {
         this.position = position;

@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
 /**
  * Created by bahubali.n on 14/03/17.
@@ -34,7 +36,7 @@ public class BonusAllocation {
         return team;
     }
     public static void main(String[] args) throws Exception {
-        Team<Employee> orgStructure = new Team<>();
+        Team<Employee> orgStructure = new Team<Employee>();
         Employee ceo = new Employee(10, 0, 4);
         orgStructure.setEmployee(ceo);
 

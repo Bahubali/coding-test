@@ -6,8 +6,7 @@ package com.games.chess;
 public class Bishop extends Piece {
 
     public Bishop(String color) {
-        this.setColor(color);
-        this.setName("B");
+        super(color, "B");
     }
     @Override
     public boolean isValidMove(Panel panel) {
