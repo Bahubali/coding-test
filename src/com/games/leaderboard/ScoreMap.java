@@ -21,7 +21,8 @@ public class ScoreMap<K, V> {
         Comparator<? super K> cpr = comparator;
         ScoreNode<K, V> p = this.rootNode;
         while (p != null) {
-            
+
         }
+        return p;
     }
 }

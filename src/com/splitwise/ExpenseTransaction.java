@@ -7,7 +7,7 @@ import java.util.*;
 
 @AllArgsConstructor
 @Builder
-public class ExpenseTransaction extends Transaction {
+public class ExpenseTransaction {
 
     private SplitStrategy splitStrategy;
     private List<User> splitAmong;

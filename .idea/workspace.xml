@@ -2,234 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b32123-3e66-4623-97f0-d1dc72e515a9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/DigitalWalletManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/DigitalWalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/Amount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/DigitalWallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/entities/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/exceptions/WalletTransactionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/accounting/wallet/utils/DigitalWalletUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/Game2048.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/GameRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/coding/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/leaderboard/LeaderBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/leaderboard/LeaderBoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/ExpenseTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/SplitExact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/SplitStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/SplitWiseApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/UserRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/file/FileReadWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/BuyStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/SellStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/StockTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/AbstractShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/GameRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/JShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/TetrixBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/ExpenseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/splitwise/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/ArrayTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/BinarySearchTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/BinaryTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/BinaryTreeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/BonusAllocation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/ConsecutiveCharacters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/ContractTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/CountryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/EmployeeKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/EquilibriumIndexAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/JsonBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/LeadersInArrayAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/LongestIncreasingSequenceAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/META-INF/CodingTest.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/MajorityElementAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Maths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/MaxDifferenceAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/MaxMoneyCollectedAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/MinWindowAlgorithm$MinWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/MinWindowAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/PrintSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/ProductArrayAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/RepeatingNumberAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/SegregateArrayAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/SegregateEvenOddAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/Trie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/TrieNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/UniqueStringAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/algorithm/MergeSortAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/algorithm/QuickSortAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/common/Human.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/BinarySearchTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/BinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/DoublyLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/QueueTemp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/TNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/heap/HeapDataStructure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/datastructure/heap/TestHeapDataStructure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/Game2048.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/GameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/Grid$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/Grid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/game2048/Tile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Bishop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/BlackPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/ChessBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/ChessGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/King.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Knight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Panel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Pawn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Queen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/Rook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/chess/WhitePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Board2048$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Board2048.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/GameRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Panel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/game2048/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Ladder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Panel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/Snake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/snakeladder/SnakeLadder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/tictactoe/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/tictactoe/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/tictactoe/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/games/tictactoe/TicTacToe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/CandiesToConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/CombinationSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/CountAndSay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/FindMissingPositive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/FirstAndLastIndexInSortedArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/LongestValidParentheses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/MultiplyStrings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/NextPermutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/RainWaterTrap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/SearchInSortedArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/SearchInsertPosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/leetcode/ValidSudoku.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/main/Boy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/main/CombinationString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/main/CombinationTesting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/main/Girl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/AdvancingThroughArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/AnagramCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/BackTracking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/BinaryTreeProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/BuyAndSellStockPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/CombinationProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/ConvertBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/DeleteDuplicatesInArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/DoublyLinkedListProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/DutchFlag$Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/DutchFlag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/EnumeratePrimeNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/HeightBalancedTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/IncrementArbitraryPrecision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/IntegerPermutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/LeetCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/LinkedListProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/LookAndSay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/MaxSumSubArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/PalindromeCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/Permutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/PhoneMnemonics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/QueueProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/RecursionProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/ReverseWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/RomanToInteger$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/RomanToInteger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/SpiralOrdering2DArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/StringPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/StringPermutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/StringWave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/TwoDimensionalArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/problems/ValidIpAddress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/recommendations/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/recommendations/MovieRecommendationSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/recommendations/Rating.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/recommendations/User$UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/recommendations/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/sorting/BubbleSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/sorting/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/stack/queue/Building.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/stack/queue/BuildingSunsetView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/stack/queue/NormalizePathname.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/stack/queue/RPAExpression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingTest/com/strings/StringFrequency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BonusAllocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BonusAllocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JsonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MinWindowAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MinWindowAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrintSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrieNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UniqueStringAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniqueStringAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/ChessGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/chess/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/chess/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/game2048/Board2048.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/game2048/Board2048.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/snakeladder/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/snakeladder/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/FirstAndLastIndexInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/FirstAndLastIndexInSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/MultiplyStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/MultiplyStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/leetcode/RainWaterTrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/RainWaterTrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/main/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/main/CombinationTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/CombinationTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/problems/BackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problems/BackTracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/problems/CombinationProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problems/CombinationProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/problems/IncrementArbitraryPrecision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problems/IncrementArbitraryPrecision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/problems/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problems/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/strings/StringFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/strings/StringFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/ExpenseTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/ExpenseTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/SplitExact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/SplitExact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/SplitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/SplitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/splitwise/UserRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/UserRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coding/Game2048$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coding/Game2048$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coding/Game2048.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coding/Game2048.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/ExpenseTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/ExpenseTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/SplitExact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/SplitExact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/SplitStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/SplitStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User$Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/UserRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/UserRegistry.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,8 +69,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -294,7 +109,12 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="RunManager" selected="Application.GameRunner (1)">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.games.tetric" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameRunner (2)">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -416,13 +236,21 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.coding.GameRunner" />
+    <configuration name="BonusAllocation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BonusAllocation" />
+      <module name="CodingTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.splitwise.ExpenseManager" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.coding.*" />
+          <option name="PATTERN" value="com.splitwise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -430,13 +258,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.games.game2048.GameRunner" />
+    <configuration name="GameRunner (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.games.tetric.GameRunner" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.games.game2048.*" />
+          <option name="PATTERN" value="com.games.tetric.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -444,41 +272,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaderBoardService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.games.leaderboard.LeaderBoardService" />
+    <configuration name="JsonBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JsonBuilder" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.games.leaderboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.algorithm.MergeSortAlgorithm" />
+    <configuration name="MemoryManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fllipkart.memory.MemoryManager" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.games.tictactoe.TicTacToe" />
-      <module name="CodingTest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.games.tictactoe.*" />
+          <option name="PATTERN" value="com.fllipkart.memory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -567,19 +375,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TicTacToe" />
-      <item itemvalue="Application.LeaderBoardService" />
-      <item itemvalue="Application.MergeSortAlgorithm" />
-      <item itemvalue="Application.GameRunner" />
-      <item itemvalue="Application.GameRunner (1)" />
+      <item itemvalue="Application.MemoryManager" />
+      <item itemvalue="Application.BonusAllocation" />
+      <item itemvalue="Application.JsonBuilder" />
+      <item itemvalue="Application.GameRunner (2)" />
+      <item itemvalue="Application.ExpenseManager" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameRunner (1)" />
-        <item itemvalue="Application.GameRunner" />
-        <item itemvalue="Application.MergeSortAlgorithm" />
-        <item itemvalue="Application.LeaderBoardService" />
-        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.GameRunner (2)" />
+        <item itemvalue="Application.ExpenseManager" />
+        <item itemvalue="Application.JsonBuilder" />
+        <item itemvalue="Application.BonusAllocation" />
+        <item itemvalue="Application.MemoryManager" />
       </list>
     </recent_temporary>
   </component>
@@ -621,7 +429,10 @@
       <workItem from="1614931819736" duration="581000" />
       <workItem from="1614943343049" duration="3031000" />
       <workItem from="1615195433755" duration="390000" />
-      <workItem from="1615212810330" duration="42171000" />
+      <workItem from="1615212810330" duration="55125000" />
+      <workItem from="1615902000719" duration="36354000" />
+      <workItem from="1616259359576" duration="103000" />
+      <workItem from="1616416548252" duration="1173000" />
     </task>
     <servers />
   </component>
@@ -661,50 +472,50 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="571" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1615382846938" />
-    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1615802197943">
+    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1616005021765">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1615802197943" />
+    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1616005021765" />
     <state x="460" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1607596348706">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="460" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1607596348706" />
-    <state x="603" y="247" key="#xdebugger.evaluate" timestamp="1615525979234">
+    <state x="603" y="247" key="#xdebugger.evaluate" timestamp="1615968305295">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="603" y="247" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1615525979234" />
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom" timestamp="1615621692941">
+    <state x="603" y="247" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1615968305295" />
+    <state width="1638" height="400" key="GridCell.Tab.0.bottom" timestamp="1616259172445">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1615621692941" />
-    <state width="1638" height="415" key="GridCell.Tab.0.center" timestamp="1615621692940">
+    <state width="1638" height="400" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
+    <state width="1638" height="400" key="GridCell.Tab.0.center" timestamp="1616259172445">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1615621692940" />
-    <state width="1638" height="415" key="GridCell.Tab.0.left" timestamp="1615621692940">
+    <state width="1638" height="400" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
+    <state width="1638" height="400" key="GridCell.Tab.0.left" timestamp="1616259172444">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1615621692940" />
-    <state width="1638" height="415" key="GridCell.Tab.0.right" timestamp="1615621692941">
+    <state width="1638" height="400" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
+    <state width="1638" height="400" key="GridCell.Tab.0.right" timestamp="1616259172445">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1615621692941" />
-    <state width="1638" height="387" key="GridCell.Tab.1.bottom" timestamp="1615621376668">
+    <state width="1638" height="400" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
+    <state width="1638" height="400" key="GridCell.Tab.1.bottom" timestamp="1616259172444">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="387" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1615621376668" />
-    <state width="1638" height="387" key="GridCell.Tab.1.center" timestamp="1615621376667">
+    <state width="1638" height="400" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
+    <state width="1638" height="400" key="GridCell.Tab.1.center" timestamp="1616259172444">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="387" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1615621376667" />
-    <state width="1638" height="387" key="GridCell.Tab.1.left" timestamp="1615621376663">
+    <state width="1638" height="400" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
+    <state width="1638" height="400" key="GridCell.Tab.1.left" timestamp="1616259172443">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="387" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1615621376663" />
-    <state width="1638" height="387" key="GridCell.Tab.1.right" timestamp="1615621376668">
+    <state width="1638" height="400" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172443" />
+    <state width="1638" height="400" key="GridCell.Tab.1.right" timestamp="1616259172444">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="387" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1615621376668" />
+    <state width="1638" height="400" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
     <state x="378" y="198" key="Maven.ArtifactSearchDialog" timestamp="1607662777364">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -1036,6 +847,36 @@
           <url>file://$PROJECT_DIR$/src/com/games/leaderboard/LeaderBoard.java</url>
           <line>38</line>
           <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/MemoryManager.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/MemoryManager.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="342" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="347" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,10 +1,17 @@
 package com.splitwise;
 
-import java.util.Date;
+import lombok.Builder;
+import lombok.Data;
 
-public abstract class Transaction {
-    protected Double amount;
-    protected String description;
-    protected User paidBy;
-    protected Date createdAt;
+import java.util.Date;
+import java.util.List;
+
+@Data
+@Builder
+public class Transaction {
+    private Double amount;
+    private String description;
+    private User paidBy;
+    private Date createdAt;
+    private List<User> splitAmong;
 }

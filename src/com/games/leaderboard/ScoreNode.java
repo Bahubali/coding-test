@@ -14,12 +14,5 @@ public class ScoreNode<K, V>{
     private Set<V> val;
     private int size;
     private ScoreNode left, right;
-
-    ScoreNode(K key, V val) {
-        this.key = key;
-        this.val.add(val);
-        this.left = null;
-        this.right = null;
-    }
     
 }
