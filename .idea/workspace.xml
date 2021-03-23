@@ -2,49 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b32123-3e66-4623-97f0-d1dc72e515a9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/file/FileReadWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/BuyStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/SellStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flipkart/stock/StockTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/MemoryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fllipkart/memory/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/AbstractShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/GameRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/IShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/JShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/games/tetric/TetrixBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/ExpenseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/splitwise/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/scheduler/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/scheduler/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/scheduler/JobScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/scheduler/SJFComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/flipkart/scheduler/Scheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/games/leaderboard/ScoreNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/ExpenseTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/ExpenseTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/SplitExact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/SplitExact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/SplitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/SplitStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/splitwise/UserRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/splitwise/UserRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/coding/Game2048$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coding/Game2048$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/coding/Game2048.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coding/Game2048.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/ExpenseTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/ExpenseTransaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/SplitExact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/SplitExact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/SplitStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/SplitStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User$Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/splitwise/UserRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/splitwise/UserRegistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/stock/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/stock/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fllipkart/memory/Memory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fllipkart/memory/Memory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +80,7 @@
       <recent name="com.games.tetric" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameRunner (2)">
+  <component name="RunManager" selected="Application.JobScheduler">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -236,14 +202,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BonusAllocation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BonusAllocation" />
-      <module name="CodingTest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExpenseManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.splitwise.ExpenseManager" />
       <module name="CodingTest" />
@@ -272,6 +230,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flipkart.scheduler.JobScheduler" />
+      <module name="CodingTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flipkart.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JsonBuilder" />
       <module name="CodingTest" />
@@ -280,13 +252,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemoryManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fllipkart.memory.MemoryManager" />
+    <configuration name="OrderMatcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flipkart.stock.OrderMatcher" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fllipkart.memory.*" />
+          <option name="PATTERN" value="com.flipkart.stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -375,19 +347,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MemoryManager" />
-      <item itemvalue="Application.BonusAllocation" />
       <item itemvalue="Application.JsonBuilder" />
       <item itemvalue="Application.GameRunner (2)" />
       <item itemvalue="Application.ExpenseManager" />
+      <item itemvalue="Application.OrderMatcher" />
+      <item itemvalue="Application.JobScheduler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JobScheduler" />
+        <item itemvalue="Application.OrderMatcher" />
         <item itemvalue="Application.GameRunner (2)" />
         <item itemvalue="Application.ExpenseManager" />
         <item itemvalue="Application.JsonBuilder" />
-        <item itemvalue="Application.BonusAllocation" />
-        <item itemvalue="Application.MemoryManager" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +404,7 @@
       <workItem from="1615212810330" duration="55125000" />
       <workItem from="1615902000719" duration="36354000" />
       <workItem from="1616259359576" duration="103000" />
-      <workItem from="1616416548252" duration="1173000" />
+      <workItem from="1616416548252" duration="7626000" />
     </task>
     <servers />
   </component>
@@ -460,10 +432,6 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="118" key="#Project_Structure" timestamp="1607662947886">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="328" y="118" key="#Project_Structure/0.23.1680.1027@0.23.1680.1027" timestamp="1607662947886" />
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608716301727">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -472,58 +440,54 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="571" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1615382846938" />
-    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1616005021765">
+    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1616425979297">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1616005021765" />
-    <state x="460" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1607596348706">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="460" y="232" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1607596348706" />
+    <state x="653" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1616425979297" />
     <state x="603" y="247" key="#xdebugger.evaluate" timestamp="1615968305295">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="603" y="247" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1615968305295" />
-    <state width="1638" height="400" key="GridCell.Tab.0.bottom" timestamp="1616259172445">
+    <state width="1638" height="400" key="GridCell.Tab.0.bottom" timestamp="1616434098210">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
-    <state width="1638" height="400" key="GridCell.Tab.0.center" timestamp="1616259172445">
+    <state width="1638" height="400" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098210" />
+    <state width="1638" height="400" key="GridCell.Tab.0.center" timestamp="1616434098209">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
-    <state width="1638" height="400" key="GridCell.Tab.0.left" timestamp="1616259172444">
+    <state width="1638" height="400" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098209" />
+    <state width="1638" height="400" key="GridCell.Tab.0.left" timestamp="1616434098209">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
-    <state width="1638" height="400" key="GridCell.Tab.0.right" timestamp="1616259172445">
+    <state width="1638" height="400" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098209" />
+    <state width="1638" height="400" key="GridCell.Tab.0.right" timestamp="1616434098209">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172445" />
-    <state width="1638" height="400" key="GridCell.Tab.1.bottom" timestamp="1616259172444">
+    <state width="1638" height="400" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098209" />
+    <state width="1638" height="400" key="GridCell.Tab.1.bottom" timestamp="1616434098209">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
-    <state width="1638" height="400" key="GridCell.Tab.1.center" timestamp="1616259172444">
+    <state width="1638" height="400" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098208" />
+    <state width="1638" height="400" key="GridCell.Tab.1.center" timestamp="1616434098208">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
-    <state width="1638" height="400" key="GridCell.Tab.1.left" timestamp="1616259172443">
+    <state width="1638" height="400" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098208" />
+    <state width="1638" height="400" key="GridCell.Tab.1.left" timestamp="1616434098207">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172443" />
-    <state width="1638" height="400" key="GridCell.Tab.1.right" timestamp="1616259172444">
+    <state width="1638" height="400" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098207" />
+    <state width="1638" height="400" key="GridCell.Tab.1.right" timestamp="1616434098208">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="400" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616259172444" />
-    <state x="378" y="198" key="Maven.ArtifactSearchDialog" timestamp="1607662777364">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="378" y="198" key="Maven.ArtifactSearchDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1607662777364" />
+    <state width="1638" height="400" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1616434098208" />
     <state x="349" y="175" key="SettingsEditor" timestamp="1608716354459">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="349" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1608716354459" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1616426100164">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1616426100164" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,6 +841,31 @@
           <url>file://$PROJECT_DIR$/src/com/fllipkart/memory/Memory.java</url>
           <line>62</line>
           <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="353" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/flipkart/stock/OrderMatcher.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="355" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

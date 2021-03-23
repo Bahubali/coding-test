@@ -4,11 +4,11 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.TreeMap;
 
 @Data
-@Builder
 public class Stock {
 
     private double price;
@@ -17,11 +17,11 @@ public class Stock {
     private TreeMap<Double, List<Order>> offers;
     public Stock(String stockKey) {
         this.name = stockKey;
-        this.bids = new TreeMap<>();
+        this.bids = new TreeMap<>(Comparator.reverseOrder());
         this.offers = new TreeMap<>();
     }
 
-    public TreeMap getBids() {
+    public TreeMap<Double, List<Order>> getBids() {
         return this.bids;
     }
 
