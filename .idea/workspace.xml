@@ -59,6 +59,24 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/problems/AdvancingThroughArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/problems/AdvancingThroughArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/problems/BackTracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/problems/BackTracking.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sorting/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sorting/MergeSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/Cappuccino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/CoffeePowder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/Cream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/Milk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/RecipeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/RecipeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/coffee/Water.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/minessweeper/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/minessweeper/GameRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/minessweeper/MinesGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problems/BinaryTreeProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problems/BinaryTreeProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/scheduler/JobScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/scheduler/JobScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/stock/OrderMatcher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/stock/OrderMatcher$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/stock/OrderMatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/stock/OrderMatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/problems/BinaryTreeProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/problems/BinaryTreeProblem.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,6 +282,7 @@
     </configuration>
     <configuration name="AdvancingThroughArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.problems.AdvancingThroughArray" />
+
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -298,10 +317,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JsonBuilder" />
+    <configuration name="JobScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flipkart.scheduler.JobScheduler" />
       <module name="CodingTest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flipkart.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -316,6 +341,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -395,20 +431,13 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.JsonBuilder" />
       <item itemvalue="Application.BonusAllocation" />
       <item itemvalue="Application.AdvancingThroughArray" />
       <item itemvalue="Application.BackTracking" />
       <item itemvalue="Application.UniqueStringAlgorithm" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UniqueStringAlgorithm" />
-        <item itemvalue="Application.BackTracking" />
-        <item itemvalue="Application.AdvancingThroughArray" />
-        <item itemvalue="Application.BonusAllocation" />
-        <item itemvalue="Application.JsonBuilder" />
-      </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -454,11 +483,15 @@
       <workItem from="1615902000719" duration="36354000" />
       <workItem from="1616259359576" duration="103000" />
       <workItem from="1616416548252" duration="7626000" />
+      <workItem from="1616493104242" duration="1024000" />
+      <workItem from="1616672336014" duration="1166000" />
+      <workItem from="1616751062823" duration="1114000" />
+      <workItem from="1617211808607" duration="11851000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -719,11 +752,6 @@
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/problems/BinaryTreeProblem.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="241" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/datastructure/heap/HeapDataStructure.java</url>
           <line>69</line>
           <option name="timeStamp" value="250" />
@@ -858,6 +886,10 @@
           <line>33</line>
           <option name="timeStamp" value="356" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="356" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

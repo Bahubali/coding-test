@@ -21,17 +21,21 @@ public class BinaryTreeProblem {
         binaryTree.addNode(new TNode(8));
         binaryTree.addNode(new TNode(9));
         binaryTree.addNode(new TNode(10));
+
+
         //binaryTree.traverse(binaryTree.getRoot());
         //levelOrderTraversal(binaryTree.getRoot());
         //reverseLevelOrderWithStack(binaryTree.getRoot());
-        levelOrderAverage(binaryTree.getRoot());
+        //levelOrderAverage(binaryTree.getRoot());
         //int heightOfTree = binaryTree.height();
         //for (int i = heightOfTree; i >= 1; i--)
           //  reverseLevelOrderTraversal(binaryTree.getRoot(), i);
 
-        int[] inputArray = new int[]{1, 2, 3, -1, 4, 5, 6, -1, -1, -1, -1, 7, -1, -1, 8};
-        TNode root = convertArrayToBT(inputArray);
-        levelOrderTraversal(root);
+//        int[] inputArray = new int[]{1, 2, 3, -1, 4, 5, 6, -1, -1, -1, -1, 7, -1, -1, 8};
+//        TNode root = convertArrayToBT(inputArray);
+//        levelOrderTraversal(root);
+
+        System.out.println(findLevel(binaryTree.getRoot(), 11, 0));
     }
 
     public static void levelOrderTraversal(TNode root) {
@@ -140,5 +144,13 @@ public class BinaryTreeProblem {
             }
         }
         return root;
+    }
+
+    public static int findLevel(TNode root, int k, int level) {
+        if (root == null) return -1;
+        if (root.value == k) return level;
+
+        int l = findLevel(root.getLeftNode(), k, level+1);
+        return  (l != -1)? l : findLevel(root.getRightNode(),k, level+1);
     }
 }
