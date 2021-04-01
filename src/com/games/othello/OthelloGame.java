@@ -34,7 +34,7 @@ public class OthelloGame {
 
     public static void main(String[] args) {
         OthelloGame game = OthelloGame.getInstance();
-        game.makeMove(0, 3, game.players.get(0));
+        game.makeMove(6, 4, game.players.get(0));
         game.getBoard().print();
     }
 }

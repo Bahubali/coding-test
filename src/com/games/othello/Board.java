@@ -21,6 +21,8 @@ public class Board {
         int mid = (this.board.length - 1)/2;
         this.board[mid][mid] = new Piece(Color.WHITE);
         this.board[mid][mid+1] = new Piece(Color.WHITE);
+        this.board[mid+1][mid] = new Piece(Color.BLACK);
+        this.board[mid+1][mid+1] = new Piece(Color.BLACK);
         this.directions = new int[][]{{0, -1},{0, 1}, {-1, 0}, {1, 0}};
     }
 
@@ -35,13 +37,15 @@ public class Board {
         for (int i = 0; i < this.rows; i++) {
             for (int j = 0; j < this.columns; j++) {
                 Piece piece = this.board[i][j];
-                if (piece == null && color != piece.getColor()) continue;
+                if (piece == null || color == piece.getColor()) continue;
 
                  Cell left = new Cell(i, j-1);
                  Cell right = new Cell(i, j+1);
                  if (isValid(left.x, left.y) && isValid(right.x, right.y)) {
-                     if (this.board[left.x][left.y].getColor() != color
-                             && this.board[right.x][right.y].getColor() != color
+                     if (this.board[left.x][left.y] != null
+                             && this.board[right.x][right.y] != null
+                             && this.board[left.x][left.y].getColor() == color
+                             && this.board[right.x][right.y].getColor() == color
                      ) {
                          this.board[i][j].flip();
                      }
@@ -49,8 +53,10 @@ public class Board {
                 Cell top = new Cell(i-1, j);
                 Cell bottom = new Cell(i+1, j);
                 if (isValid(top.x, top.y) && isValid(bottom.x, bottom.y)) {
-                    if (this.board[top.x][top.y].getColor() != color
-                            && this.board[bottom.x][bottom.y].getColor() != color
+                    if (this.board[top.x][top.y] != null
+                            && this.board[bottom.x][bottom.y] != null
+                            && this.board[top.x][top.y].getColor() == color
+                            && this.board[bottom.x][bottom.y].getColor() == color
                     ) {
                         this.board[i][j].flip();
                     }
@@ -61,14 +67,17 @@ public class Board {
     }
 
     private boolean isValid(int x, int y) {
-        return (x < 0 || y < 0 || x >= this.rows || y >= this.columns);
+        return (x >= 0 || y >= 0 || x < this.rows || y < this.columns);
     }
 
     public void print() {
         for (int i = 0; i < this.rows; i++) {
             for (int j = 0; j < this.columns; j++) {
-                String color = (this.board[i][j].getColor() == Color.WHITE)? "W" : "B";
-                System.out.print(color+" ");
+                if (this.board[i][j] == null) System.out.print("0 ");
+                else {
+                    String color = (this.board[i][j].getColor() == Color.WHITE) ? "W" : "B";
+                    System.out.print(color + " ");
+                }
             }
             System.out.println();
         }
