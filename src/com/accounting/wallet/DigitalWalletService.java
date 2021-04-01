@@ -7,7 +7,7 @@ import java.util.*;
 public class DigitalWalletService {
 
     private Map<String, User> users = new HashMap<>();
-    private Map<Account, List<Transaction>> walletTransactions;
+    private Map<Account, List<Transaction>> walletTransactions = new HashMap<>();
 
     public User createWallet(String user, Double amount) throws Exception {
         User accountHolder = getUser(user);
@@ -25,7 +25,13 @@ public class DigitalWalletService {
         if (fromUser.getWallet() == null || toUser.getWallet() == null) {
             throw new Exception("Failed, one of user doesn't have account");
         }
+        List<Transaction> transactions = new ArrayList<>();
+        if (walletTransactions.get(fromUser.getWallet()) == null) {
+            walletTransactions.put(fromUser.getWallet(), transactions);
+        }
         Double debitAmount = fromUser.getWallet().debit(transaction.getAmount());
+        walletTransactions.get(fromUser.getWallet()).add(transaction);
+        walletTransactions.get(toUser.getWallet()).add(transaction);
         toUser.getWallet().credit(debitAmount);
     }
 

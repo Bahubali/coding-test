@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by bahubali.n on 14/03/17.
@@ -65,7 +63,17 @@ public class BonusAllocation {
         orgStructure.addTeamMember(director2);
         double bonus = 100000;
         orgStructure = BonusAllocation.allocate(orgStructure, bonus);
-
+        Queue<Team<Employee>> queue = new LinkedList<>();
+        queue.add(orgStructure);
+        while (!queue.isEmpty()) {
+            Team<Employee> current = queue.remove();
+            if (!current.hasTeamMembers()) {
+                System.out.println(current.getEmployee().getEmployeeId()+" bonus amount is "
+                        +current.getEmployee().getBonusAmount());
+            } else {
+                current.getTeamMembers().stream().forEach(member -> queue.add(member));
+            }
+        }
 
     }
 }

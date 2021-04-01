@@ -2,6 +2,8 @@ package com.accounting.wallet;
 
 import com.accounting.wallet.entities.Transaction;
 import com.accounting.wallet.entities.User;
+import com.splitwise.Command;
+
 import java.util.List;
 
 public class DigitalWalletManager {
@@ -14,7 +16,7 @@ public class DigitalWalletManager {
        DigitalWalletService walletService  = new DigitalWalletService();
        walletService.addUser(new User("Bahubali", "Nandaganv", "bahubali.n@flipkart.com"));
        walletService.addUser(new User("Smita", "Patil", "smita.n@flipkart.com"));
-       String commandType = "";
+       String commandType = STATEMENT;
 
        try {
            User bahubali = walletService.createWallet("bahubali.n@flipkart.com", Double.valueOf(100));

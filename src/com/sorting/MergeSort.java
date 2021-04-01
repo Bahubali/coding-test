@@ -7,7 +7,12 @@ public class MergeSort {
 
     }
 
-    public static void mergeSort(int[] nums, int l, int h) {
-
+    public static void mergeSort(int[] nums, int l, int r) {
+        if (l >= r) {
+            return;
+        }
+        int mid = l + (r - l)/2;
+        mergeSort(nums, l, mid);
+        mergeSort(nums, mid+1, r);
     }
 }
