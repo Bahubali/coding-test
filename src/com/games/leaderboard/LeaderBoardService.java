@@ -2,7 +2,8 @@ package com.games.leaderboard;
 
 import com.google.inject.internal.cglib.core.$Customizer;
 
-import java.util.ListIterator;
+import java.util.Iterator;
+import java.util.List;
 
 public class LeaderBoardService {
 
@@ -13,7 +14,7 @@ public class LeaderBoardService {
         board.upSert(User.builder().email("sachin.j@flipkart").name("Sachin").score(0).build());
         board.upSert(User.builder().email("anand.hi@flipkart").name("Anand").score(0).build());
         //board.upSert(User.builder().email("anusha.u@flipkart").name("Anand").score(0).build());
-        board.upSert(User.builder().email("sandeep.k@flipkart").name("Anand").score(0).build());
+        board.upSert(User.builder().email("sandeep.k@flipkart").name("Sandeep").score(0).build());
 
         board.upsertScore("anand.hi@flipkart", 10);
         board.upsertScore("smita.p@flipkart", 50);
@@ -21,13 +22,18 @@ public class LeaderBoardService {
         board.upsertScore("bahubali.n@flipkart", 50);
         board.upsertScore("sandeep.k@flipkart", 210);
         board.upsertScore("anand.hi@flipkart", 150);
-        board.updateScoreBoard(board.getUsers().size());
-        ListIterator<User> iterator = board.getUsers().listIterator();
+        board.upsertScore("bahubali.n@flipkart", 100);
+        //board.updateScoreBoard(board.getUsers().size());
+        Iterator iterator = board.getScores().keySet().iterator();
+        int rank = 1;
         while (iterator.hasNext()) {
-            User currentUser = iterator.next();
-            if (currentUser != null)
-                System.out.println("User "+currentUser.getEmail()+" has score of "+ currentUser.getScore());
-
+            Integer score = (Integer) iterator.next();
+            List<Integer> userIds = board.getScores().get(score);
+            if (userIds.isEmpty()) continue;
+            for (Integer userId: userIds) {
+                System.out.println("Rank "+rank+" - score - "+score+" - "+board.getUsers().get(userId));
+            }
+            rank++;
         }
     }
 }

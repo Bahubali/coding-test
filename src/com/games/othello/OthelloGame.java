@@ -35,6 +35,9 @@ public class OthelloGame {
     public static void main(String[] args) {
         OthelloGame game = OthelloGame.getInstance();
         game.makeMove(6, 4, game.players.get(0));
+        game.makeMove(6, 5, game.players.get(1));
+        game.makeMove(5, 6, game.players.get(0));
+        game.makeMove(6, 3, game.players.get(1));
         game.getBoard().print();
     }
 }

@@ -27,6 +27,7 @@ public class Board {
     }
 
     public boolean placePiece(int r, int c, Color color) {
+        if (!isValid(r, c)) return false;
         if (this.board[r][c] != null) return false;
         this.board[r][c] = new Piece(color);
         this.checkFlipPossible(color);
