@@ -8,11 +8,11 @@ import java.util.List;
 public class Movie {
 
     private String name;
-    private String genre;
+    private Genre genre;
 
     List<Rating> userRatings;
 
-    public Movie(String name, String genre) {
+    public Movie(String name, Genre genre) {
         this.name = name;
         this.genre = genre;
     }
@@ -21,5 +21,9 @@ public class Movie {
         if (rating != null) {
             this.userRatings.add(rating);
         }
+    }
+
+    public enum Genre {
+        ROMANTIC, ACTION, COMEDY, FAMILY, A;
     }
 }
