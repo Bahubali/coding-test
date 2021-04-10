@@ -11,7 +11,7 @@ public class MergeSortAlgorithm {
         int[] givenArray = {10, 2, 7, 5, 17, 1, 9, 25};
         MergeSortAlgorithm.sortArray(givenArray);
         for (int i = 0; i < givenArray.length; i++)
-            System.out.println(givenArray[i]);
+            System.out.print(givenArray[i]+" ");
     }
 
     public static void sortArray(int[] inputArray) {

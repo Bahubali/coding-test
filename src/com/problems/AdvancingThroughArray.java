@@ -11,6 +11,7 @@ public class AdvancingThroughArray {
     public static void main(String[] args) {
         List<Integer> inputArray = Arrays.asList(2, 3, 1, 1, 2, 4, 2, 0, 1, 1);
 
+
         //int prevStepIndex = 0, prevStepAdvance = 0, furthestSoFor = 0;
         int minJumps = 0;
         boolean reachedEnd = false;

@@ -11,9 +11,9 @@ public class BackTracking {
         //List<Integer> diceChoices = new ArrayList<>();
         //diceRoll(3, diceChoices);
         String str = "AABC";
-        permute(str);
+        //permute(str);
         //diceSum(4, 8, 0, diceChoices);
-        //printBinaryHelper(3, "");
+        printBinaryHelper(3, "");
     }
 
     public static void indent(int n) {
@@ -21,8 +21,8 @@ public class BackTracking {
             System.out.print("    ");
     }
     public static void printBinaryHelper(int digits, String prefix) {
-        indent(prefix.length());
-        System.out.println("printBinaryHelper("+digits+","+prefix+")");
+        //indent(prefix.length());
+        //System.out.println("printBinaryHelper("+digits+","+prefix+")");
         if (digits == 0) {
             System.out.println(prefix);
         } else {

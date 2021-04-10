@@ -23,8 +23,8 @@ public class Memory {
         if (size > available) throw new RuntimeException("Memory not available");
         List<MemoryLocation> allocatedMemory = new ArrayList<>();
         if (continuous) {
-            int start = this.freePointer;
-            int end = this.freePointer;
+            int start = isContinuousMemoryAvailable(size);
+            int end = start;
             while (size-- > 0) {
                 this.memoryBlocks[end++] = -1;
             }
@@ -61,6 +61,23 @@ public class Memory {
             this.available += location.getSize();
             this.allocated -= location.getSize();
         }
+    }
+
+    private int isContinuousMemoryAvailable(int size) {
+        int start = this.memoryBlocks[this.freePointer];
+        int allocatedMemory = 1;
+        int fromIndex = start - 1;
+        while (allocatedMemory < size) {
+            int end = this.memoryBlocks[start];
+            if (Math.abs(start - end) != 1 && allocatedMemory < size) {
+                allocatedMemory = 1;
+                start = end;
+                fromIndex = start - 1;
+            }
+            allocatedMemory++;
+            start = end;
+        }
+        return fromIndex;
     }
 
     public void status() {

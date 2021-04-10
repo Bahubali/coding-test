@@ -8,30 +8,58 @@ public class LeaderBoard {
     private String boardId;
     private List<User> users;
     private ConcurrentSkipListMap<String, Integer> userIndex;
+    private SortedMap<Integer, List<Integer>> scoreMap;
 
     LeaderBoard(String boardId) {
         this.boardId = boardId;
         this.users = new ArrayList<>();
         this.users.add(0, null);
         this.userIndex = new ConcurrentSkipListMap<>();
+        this.scoreMap = new TreeMap<>(Collections.reverseOrder());
     }
 
     public void upSert(User user) {
         if (userIndex.containsKey(user.getEmail())) {
-            //
+            List<Integer> usersWithScore = scoreMap.get(user.getScore());
+            if (usersWithScore == null) {
+                usersWithScore = new ArrayList<>();
+                usersWithScore.add(users.indexOf(user));
+                scoreMap.put(user.getScore(), usersWithScore);
+            } else {
+                usersWithScore.add(users.indexOf(user));
+                scoreMap.put(user.getScore(), usersWithScore);
+            }
         } else {
             users.add(user);
             userIndex.put(user.getEmail(), users.indexOf(user));
+            List<Integer> usersWithScore = scoreMap.get(user.getScore());
+            if (usersWithScore == null) {
+                usersWithScore = new ArrayList<>();
+                usersWithScore.add(users.indexOf(user));
+                scoreMap.put(user.getScore(), usersWithScore);
+            } else {
+                usersWithScore.add(users.indexOf(user));
+                scoreMap.put(user.getScore(), usersWithScore);
+            }
         }
     }
     
     public void upsertScore(String userEmail, int score) {
+//        if (userIndex.containsKey(userEmail)) {
+//            int currentIndex = userIndex.get(userEmail);
+//            User user = users.get(currentIndex);
+//            int latestScore = user.getScore() + score;
+//            user.setScore(latestScore);
+//            updateScoreBoard(currentIndex);
+//        }
+
         if (userIndex.containsKey(userEmail)) {
-            int currentIndex = userIndex.get(userEmail);
-            User user = users.get(currentIndex);
-            int latestScore = user.getScore() + score;
-            user.setScore(latestScore);
-            updateScoreBoard(currentIndex);
+            int userIdx = userIndex.get(userEmail);
+            User user = users.get(userIdx);
+            List<Integer> usersWithScore = scoreMap.get(user.getScore());
+            usersWithScore.remove(new Integer(userIdx));
+            user.setScore(user.getScore()+score);
+            upSert(user);
         }
     }
     public void updateScoreBoard(int idx) {
@@ -65,5 +93,9 @@ public class LeaderBoard {
     }
     public List<User> getUsers() {
         return this.users;
+    }
+
+    public SortedMap<Integer, List<Integer>> getScores() {
+        return this.scoreMap;
     }
 }
