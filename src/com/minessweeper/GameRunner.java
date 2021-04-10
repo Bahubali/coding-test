@@ -10,7 +10,7 @@ import java.util.stream.StreamSupport;
 public class GameRunner {
 
     public static void main(String[] args) {
-        MinesGrid minesGrid = new MinesGrid(4, 5);
+        MinesGrid minesGrid = new MinesGrid(10, 10);
         minesGrid.initBoard();
 //        minesGrid.reveal(0, 2);
 //        minesGrid.print();
