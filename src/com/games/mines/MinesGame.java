@@ -11,14 +11,17 @@ public class MinesGame {
     }
 
     public void revealCell(int x, int y) {
-        if (!board.inBounds(x, y)) return;
+        if (!this.board.inBounds(x, y)) return;
 
-        Cell cell = board.getCell(x, y);
-        if (board.getCell(x, y).isExposed()) return;
+        Cell cell = this.board.getCell(x, y);
+        if (this.board.getCell(x, y).isExposed()) return;
 
-        if (board.getMinesCount(cell) > 0) return;
-        cell.exposed();
-        for (int[] coordinate: board.getCoordinates()) {
+        if (this.board.getMinesCount(cell) > 0) {
+            cell.expose();
+            return;
+        }
+        cell.expose();
+        for (int[] coordinate: this.board.getCoordinates()) {
             int r = cell.getRow() + coordinate[0];
             int c = cell.getColumn() + coordinate[1];
             revealCell(r, c);
@@ -29,7 +32,9 @@ public class MinesGame {
         MinesGame game = new MinesGame();
         game.board.placeMines(5);
         game.board.exploreNumbers();
+        //game.board.print();
         game.revealCell(1, 3);
+        game.revealCell(2, 4);
         game.board.print();
     }
 }

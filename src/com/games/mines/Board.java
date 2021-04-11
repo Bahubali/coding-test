@@ -55,12 +55,12 @@ public class Board {
 
     public void exploreNumbers() {
         int[][] coordinates = getCoordinates();
-        for(Cell cell: bombs) {
+        for(Cell cell: this.bombs) {
             for (int[] coordinate: coordinates) {
                 int r = cell.getRow() + coordinate[0];
                 int c = cell.getColumn() + coordinate[1];
                 if (inBounds(r, c)) {
-                    cells[r][c].incrementNumber();
+                    this.cells[r][c].incrementNumber();
                 }
             }
         }
@@ -71,7 +71,7 @@ public class Board {
     }
 
     public Cell getCell(int r, int c) {
-        return cells[r][c];
+        return this.cells[r][c];
     }
 
     public int getMinesCount(Cell cell) {
@@ -81,7 +81,7 @@ public class Board {
             int r = cell.getRow() + coordinate[0];
             int c = cell.getColumn() + coordinate[1];
             if (inBounds(r, c)) {
-               Cell neighbour = cells[r][c];
+               Cell neighbour = this.cells[r][c];
                if (neighbour.isBomb()) count++;
             }
         }
@@ -94,12 +94,13 @@ public class Board {
     public void print() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                Cell cell = cells[i][j];
+                Cell cell = this.cells[i][j];
                 if (cell.isExposed()) {
+                    //System.out.println(cell.getNumber());
                     String cChar = (cell.isBomb()) ? "*" : (cell.getNumber() > 0) ? String.valueOf(cell.getNumber()) : "B";
                     System.out.print(cChar + "  ");
                 } else {
-                    System.out.print("E ");
+                    System.out.print("E  ");
                 }
             }
             System.out.println();

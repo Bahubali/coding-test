@@ -1,9 +1,7 @@
 package com.flipkart.bonus;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Stack;
-import java.util.Map;
+import java.util.*;
 
 public class BonusAllocator {
 
@@ -27,6 +25,24 @@ public class BonusAllocator {
             } else {
                 if (!employeeStack.isEmpty()) employeeStack.pop();
             }
+        }
+    }
+
+    public static void print(Employee employee) {
+        Deque<Employee> queue = new ArrayDeque<>();
+        queue.push(employee);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                Employee current = queue.poll();
+                System.out.print(current.getId()+" ");
+                if (current.hasMembers()) {
+                    for (Employee member : current.getTeamMembers()) {
+                        queue.add(member);
+                    }
+                }
+            }
+            System.out.println();
         }
     }
 
@@ -54,6 +70,7 @@ public class BonusAllocator {
         manager2.addMember(developer5);
         manager3.addMember(developer6);
         BonusAllocator.allocate(ceo, 100000.0d);
-        System.out.println("Allocated bonus");
+        System.out.println("Print the org heirarchy");
+        BonusAllocator.print(ceo);
     }
 }
