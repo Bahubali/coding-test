@@ -22,8 +22,8 @@ public class FindMinDistance {
         //System.out.println("Possible triangles? "+incSubSeq(nums));
         //lcs("acbacba".toCharArray(),"abcabcaa".toCharArray(),"acbacba".length(),"abcabcaa".length());
         //peopleHeights();
-        //mergeMatrix();
-        sortedMatrix(grid);
+        mergeMatrix();
+        //sortedMatrix(grid);
         //System.out.println(removeDuplicates("caaabbbaacdddd"));
     }
 
@@ -238,13 +238,13 @@ public class FindMinDistance {
 
     public static void mergeMatrix() {
         int[][] matrix = new int[][] {
-                {0, 1, 0, 1},
-                {1, 1, 1, 0},
-                {1, 1, 0, 0},
-                {0, 1, 1, 1}
+                {0, 2, 0, 2},
+                {2, 2, 2, 0},
+                {2, 2, 2, 2},
+                {0, 2, 2, 2}
         };
         matrix(matrix, true, false);
-        matrix(matrix, false, true);
+        //matrix(matrix, false, true);
         //matrix(matrix, false, true);
         for (int m = 0; m < 4; m++) {
             for (int n = 0; n < 4; n++) {

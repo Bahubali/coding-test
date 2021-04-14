@@ -42,5 +42,5 @@ public class Cell {
     public void setBomb() { this.isBomb = !isBomb; }
     public boolean isExposed() { return this.isExposed; }
 
-    public void exposed() { this.isExposed = !isExposed; }
+    public void expose() { this.isExposed = !isExposed; }
 }
