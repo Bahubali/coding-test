@@ -1,9 +1,37 @@
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
 /**
  * Created by bahubali.n on 25/12/16.
  */
 public class PrintSum {
     public static int MAX = 10000;
     public static void main(String[] args) throws Exception{
+        Scanner scanner = new Scanner(System.in);
+        int numCount = scanner.nextInt();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        int k = 3;
+        int j = numCount - k, i = 0;
+        int[] result = new int[j];
+        while (numCount > 0 && scanner.hasNext()) {
+            if (numCount > j) {
+                minHeap.add(scanner.nextInt());
+            } else {
+                int current = scanner.nextInt();
+                if(current > minHeap.peek()) {
+                    //System.out.println(minHeap.poll());
+                    result[i++] = minHeap.poll();
+                    minHeap.add(current);
+                } else {
+                    result[i++] = minHeap.peek();
+                    //System.out.println(minHeap.peek());
+                }
+            }
+            numCount--;
+        }
+        Arrays.stream(result).forEach(num -> {System.out.print(num+" ");});
+        System.exit(1);
         int[] arr1 = {1, 2, 3, 2, 3, 1, 3};
         int[] arr2 = {5, 8, 12, 14};
         int[] arr = {2, 3, 4, 1, 8, 9, 3};

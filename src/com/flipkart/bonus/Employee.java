@@ -1,7 +1,6 @@
 package com.flipkart.bonus;
 import lombok.Getter;
 import lombok.Setter;
-import sun.security.krb5.internal.crypto.Des;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -25,6 +24,11 @@ public class Employee {
         this.teamMembers = new LinkedList<>();
     }
 
+    /**
+     * Add team member
+     *
+     * @param employee
+     */
     public void addMember(Employee employee) {
         int size = this.teamMembers.size();
         if (this.teamMembers != null)

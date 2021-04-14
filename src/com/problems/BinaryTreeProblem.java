@@ -23,7 +23,7 @@ public class BinaryTreeProblem {
         binaryTree.addNode(new TNode(10));
 
 
-        //binaryTree.traverse(binaryTree.getRoot());
+        binaryTree.traverse(binaryTree.getRoot());
         //levelOrderTraversal(binaryTree.getRoot());
         //reverseLevelOrderWithStack(binaryTree.getRoot());
         //levelOrderAverage(binaryTree.getRoot());
