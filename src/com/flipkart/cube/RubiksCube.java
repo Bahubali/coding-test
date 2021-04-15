@@ -39,8 +39,10 @@ public class RubiksCube {
                         Iterator iterator = (degree > 0)? this.xAxis.iterator() : this.xAxis.descendingIterator();
                         rotateAxis(row, column, iterator);
                     }
-                    if (layer == 1 || layer == 3) {
+                    if (layer == 1) {
                         this.rubikSides.get(SideType.LEFT).rotateClockWise();
+                    } else if (layer == 3) {
+                        this.rubikSides.get(SideType.RIGHT).rotateClockWise();
                     }
                     break;
                 case Y:
