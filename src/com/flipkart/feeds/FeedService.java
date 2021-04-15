@@ -1,7 +1,6 @@
 package com.flipkart.feeds;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class FeedService {
@@ -47,6 +46,20 @@ public class FeedService {
         }
     }
 
+    public List<Feed> getLatestFeeds() {
+        List<Feed> feeds = this.feeds.values().stream().collect(Collectors.toList());
+        Collections.sort(feeds, new Comparator<Feed>() {
+            @Override
+            public int compare(Feed o1, Feed o2) {
+                if (o1.getCreatedAt().getTime() > o2.getCreatedAt().getTime()) {
+                    return (o1.getScore() < o2.getScore())? 1 : -1;
+                }
+                return -1;
+            }
+        });
+        return feeds;
+    }
+
     private int getFeedId() {
         return this.feeds.size() + 1;
     }
@@ -60,5 +73,16 @@ public class FeedService {
         feedService.postFeed("Happy Ugadi All!");
         feedService.login("tom@fk.com");
         feedService.reply(1, "Same to you!");
+        feedService.postFeed("Happy Weekend!");
+        feedService.login("jim@fk.com");
+        feedService.reply(1, "Same here!");
+
+        feedService.getLatestFeeds().stream().forEach(feed -> {
+            System.out.println(feed.getContent());
+            System.out.println("Comments :");
+            feed.getComments().stream().forEach(comment -> {
+                System.out.println(comment.getContent());
+            });
+        });
     }
 }

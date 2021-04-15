@@ -35,7 +35,9 @@ public class Feed {
     }
 
     public int getScore() {
-        return this.upVotes - this.downVotes;
+        int score = this.upVotes - this.downVotes;
+        score += this.comments.size();
+        return score;
     }
 
     public int getCommentId() {
