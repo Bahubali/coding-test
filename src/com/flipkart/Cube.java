@@ -10,14 +10,14 @@ public class Cube {
     private int[][] bottom = new int[3][3];;
 
     public Cube() {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                top[i][j] = 1;
-                left[i][j] = 2;
-                front[i][j] = 3;
-                right[i][j] = 4;
-                back[i][j] = 5;
-                bottom[i][j] = 6;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                top[i][j] = 0;
+//                left[i][j] = 2;
+//                front[i][j] = 3;
+//                right[i][j] = 4;
+//                back[i][j] = 5;
+//                bottom[i][j] = 6;
             }
         }
     }
@@ -64,6 +64,7 @@ public class Cube {
             }
         }
     }
+
     public static void main(String[] args) {
         Cube cube = new Cube();
         cube.rotateLayer('x', 2, 2);

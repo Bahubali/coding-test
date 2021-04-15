@@ -47,14 +47,18 @@ public class GameRunner {
 
         terix.print();
         IShape jShape1 = new JShape(3, 2, JShape.JShapeType.TYPE_1);
-        Coordinate co = Coordinate.builder().x(0).y(1).build();
+        Coordinate co = Coordinate.builder().x(0).y(0).build();
         terix.move(co, jShape1);
-        System.out.println("*****************************************");
         terix.print();
         IShape jShape2 = new JShape(3, 2, JShape.JShapeType.TYPE_1);
         Coordinate co2 = Coordinate.builder().x(0).y(0).build();
         terix.move(co2, jShape2);
-        System.out.println("*****************************************");
         terix.print();
+        IShape jShape3 = new JShape(3, 2, JShape.JShapeType.TYPE_1);
+        Coordinate co3 = Coordinate.builder().x(0).y(0).build();
+        terix.move(co3, jShape3);
+        terix.print();
+//        terix.clear();
+//        terix.print();
     }
 }

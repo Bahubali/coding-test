@@ -34,6 +34,7 @@ public class TetrixBoard extends Board{
             }
             System.out.println();
         }
+        System.out.println("************************");
     }
 
     @Override
@@ -49,9 +50,10 @@ public class TetrixBoard extends Board{
             }
             if (isRowFilled) {
                 for (int j = 0; j < this.getColumns(); j++) {
-                    for (int k = row; k > 0; k--) {
-                        this.tetrix[k][j] = this.tetrix[k - 1][j];
-                        this.tetrix[k - 1][j] = 0;
+                    for (int k = i; k > 0; k--) {
+                        if (this.tetrix[k-1][j] == 0)
+                            this.tetrix[k][j] = this.tetrix[k - 1][j];
+                        //this.tetrix[k - 1][j] = 0;
                     }
                 }
             }
@@ -69,9 +71,15 @@ public class TetrixBoard extends Board{
                 if (prev >= 0)
                     clearShape(prev, coordinate.getY(), prev+shape.getRows(), j+shape.getColumns(), shape.getShape());
                 copyShape(i, coordinate.getY(), i+shape.getRows(), j+shape.getColumns(), shape.getShape());
+
+                prev = i;
+                i++;
+            } else {
+                break;
             }
-            prev = i;
-            i++;
+        }
+        if (prev < 0){
+            System.out.println("Game over");
         }
     }
 
@@ -91,10 +99,10 @@ public class TetrixBoard extends Board{
 
     private int[][] copyGrid(int i, int j, int rows, int columns) {
         int[][] grid = new int[rows-i][columns-j];
-        int m = 0;
+        int m = 0, n = 0, k = 0;
         for (; i< rows; i++) {
-            int n = 0;
-            int k = j;
+            n = 0;
+            k = j;
             for (; k < columns; k++) {
                 grid[m][n++] = this.tetrix[i][k];
             }
