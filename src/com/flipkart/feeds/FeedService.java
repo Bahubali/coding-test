@@ -50,4 +50,15 @@ public class FeedService {
     private int getFeedId() {
         return this.feeds.size() + 1;
     }
+
+    public static void main(String[] args) {
+        FeedService feedService = new FeedService();
+        feedService.userSignUp(new User("tom@fk.com", "Tom"));
+        feedService.userSignUp(new User("jim@fk.com", "Jimmy"));
+        feedService.userSignUp(new User("karan@fk.com", "Karan"));
+        feedService.login("karan@fk.com");
+        feedService.postFeed("Happy Ugadi All!");
+        feedService.login("tom@fk.com");
+        feedService.reply(1, "Same to you!");
+    }
 }

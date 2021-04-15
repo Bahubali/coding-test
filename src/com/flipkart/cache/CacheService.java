@@ -24,11 +24,17 @@ public class CacheService {
 
     public String get(String key) {
         AbstractCache cache = this.multilevelCache;
-        boolean keyExists = false;
+        String value = null;
+        int totalReadTime = 0;
         while (cache != null && !cache.keyExists(key)) {
             cache = cache.getNextLevel();
+            totalReadTime += cache.readTime;
         }
-        if (cache != null) return cache.get(key);
+        if (cache != null) {
+            Response response = cache.get(key);
+            value = response.getValue();
+            totalReadTime += response.getTotalTime();
+        }
         return null;
     }
 

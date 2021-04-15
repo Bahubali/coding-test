@@ -14,7 +14,7 @@ public class UserService {
         if (this.userRegistry.containsKey(email)) {
             return this.userRegistry.get(email);
         }
-        throw new RuntimeException("User doesn't exist");
+        return null;
     }
 
     public void registerUser(User user) {

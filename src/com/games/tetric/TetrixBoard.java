@@ -73,7 +73,6 @@ public class TetrixBoard extends Board{
             prev = i;
             i++;
         }
-        //clear();
     }
 
 
@@ -131,5 +130,4 @@ public class TetrixBoard extends Board{
             m++;
         }
     }
-
 }

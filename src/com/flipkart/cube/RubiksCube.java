@@ -1,7 +1,5 @@
 package com.flipkart.cube;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class RubiksCube {
 
@@ -11,6 +9,7 @@ public class RubiksCube {
     private LinkedList<Side> xAxis;
     RubiksCube() {
         this.rubikSides = new HashMap<>();
+        this.xAxis = new LinkedList<Side>();
         this.initRubik();
     }
 
@@ -21,41 +20,30 @@ public class RubiksCube {
         this.rubikSides.put(SideType.RIGHT, new Side(ROWS, COLUMNS, 4));
         this.rubikSides.put(SideType.BACK, new Side(ROWS, COLUMNS, 5));
         this.rubikSides.put(SideType.BOTTOM, new Side(ROWS, COLUMNS, 6));
+        this.initXAxis();
     }
 
     private void initXAxis() {
-        this.xAxis = new LinkedList<>();
         this.xAxis.add(this.rubikSides.get(SideType.TOP));
         this.xAxis.add(this.rubikSides.get(SideType.BACK));
         this.xAxis.add(this.rubikSides.get(SideType.BOTTOM));
         this.xAxis.add(this.rubikSides.get(SideType.FRONT));
     }
-    public void rotateLayer(char axis, int layer, int degree) {
+    public void rotateLayer(Axis axis, int layer, int degree) {
         int row, column;
-        while (degree > 0) {
+        while (degree != 0) {
             switch (axis) {
-                case 'x':
+                case X:
                     column = layer - 1;
                     for (row = 0; row < 3; row++) {
-                        int tmp = this.rubikSides.get(SideType.TOP).getVal(row,column);
-                        this.rubikSides.get(SideType.TOP).setVal(
-                                row, column, this.rubikSides.get(SideType.BACK).getVal(row, column)
-                        );
-                        this.rubikSides.get(SideType.BACK).setVal(
-                                row, column, this.rubikSides.get(SideType.BOTTOM).getVal(row, column)
-                        );
-                        this.rubikSides.get(SideType.BOTTOM).setVal(
-                                row, column, this.rubikSides.get(SideType.FRONT).getVal(row, column)
-                        );
-                        this.rubikSides.get(SideType.FRONT).setVal(
-                                row, column, tmp
-                        );
+                        Iterator iterator = (degree > 0)? this.xAxis.iterator() : this.xAxis.descendingIterator();
+                        rotateAxis(row, column, iterator);
                     }
                     if (layer == 1 || layer == 3) {
                         this.rubikSides.get(SideType.LEFT).rotateClockWise();
                     }
                     break;
-                case 'y':
+                case Y:
                     row = layer - 1;
                     for (column = 0; column < 3; column++) {
                         int tmp = this.rubikSides.get(SideType.LEFT).getVal(row,column);
@@ -74,7 +62,7 @@ public class RubiksCube {
                     }
                     break;
             }
-            degree--;
+            degree = (degree > 0)? degree-1 : degree+1;
         }
     }
 
@@ -98,6 +86,22 @@ public class RubiksCube {
         }
     }
 
+    private void rotateAxis(int row, int column, Iterator iterator) {
+        Side previous = null;
+        Side current = null;
+        int temp = 0;
+        while (iterator.hasNext()) {
+            current = (Side) iterator.next();
+            if (previous == null) {
+                temp = current.getVal(row, column);
+            } else {
+                previous.setVal(row, column, current.getVal(row, column));
+            }
+            previous = current;
+        }
+        current.setVal(row, column, temp);
+    }
+
     public void print() {
         this.rubikSides.get(SideType.TOP).print();
         this.rubikSides.get(SideType.LEFT).print();
@@ -109,7 +113,8 @@ public class RubiksCube {
 
     public static void main(String[] args) {
         RubiksCube cube = new RubiksCube();
-        cube.rotateCube('x', 1);
+        //cube.rotateCube('x', Degree.P90.getVal());
+        cube.rotateLayer(Axis.X, 2, Degree.P90.getVal());
         cube.print();
     }
 }

@@ -29,8 +29,8 @@ public class LevelCache extends AbstractCache {
     }
 
     @Override
-    public String get(String key) {
-        return this.cacheStore.get(key);
+    public Response get(String key) {
+        return Response.builder().value(this.cacheStore.get(key)).totalTime(this.readTime).build();
     }
 
     public AbstractCache getNextLevel() {
